@@ -1,16 +1,49 @@
 p {
-    color: rgb(254, 127, 156);
-    font-family: cursive;
-    font-weight: bolder;
 }
 
 h1 {
-    color: rgb(223, 82, 133);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
+    color: rgb(81, 123, 148);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
 }
 
+
 body {
-    background-color: rgb(245, 195, 194);
-    text-align: center;
+    margin: 100px;
+    background-color:rgb(255, 247, 247);
+}
+
+ul {
+    list-style: none;
+}
+
+.hidden {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#row {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+#column1 {
+    flex: 65%;
+}
+
+#column2 {
+    flex: 20%;
+    right: 5%;
+    z-index: 1;
+    position: fixed;
+    /* padding-top: 150px;
+    width: 400px;
+    z-index: 1;
+    top: 20px;
+   
+    margin-right: 300px;
+    position: fixed;
+    display: flex; */
 }
