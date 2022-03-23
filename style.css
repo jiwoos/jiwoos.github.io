@@ -1,27 +1,44 @@
 p {
+    color: whitesmoke;
 }
 
 h1 {
-    color: rgb(81, 123, 148);
-    font-family: 'PT Sans', sans-serif;
+    color: rgb(179, 243, 179);
+    font-family: 'VT323', monospace;
     font-weight: 500;
+    font-size: 70px;
+}
+
+h2 {
+    font-family: 'VT323', monospace;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+
+h3 {
+    font-family: 'VT323', monospace;
+    color: whitesmoke;
+    font-size: 30px;
 }
 
 a {
     text-decoration: none;
     height: 120%;
-    color: black;
+    color: whitesmoke;
     display: block;
 }
 
 a:hover {
-    color:rgb(109, 138, 109);
+    color:rgb(179, 243, 179);
 }
 
 body {
-    margin: 100px;
-    background-color:rgb(255, 247, 247);
-    font-family: 'PT Sans', sans-serif;
+    color: whitesmoke;
+    margin: 20px 70px 70px 70px;
+    /* background-color:rgb(255, 247, 247); */
+    background-color: rgb(24, 24, 24);
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -30,25 +47,35 @@ ul {
 
 }
 
+img {
+
+    margin: 5px 0 0 0;
+}
 button {
     border: none;
     transition-duration: 0.4s;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 3px;
+    background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+    border:rgb(179, 243, 179) 0.5px solid;
 }
 button:hover {
-    background-color: rgb(109, 138, 109);
-    color:aliceblue;
+    /* background-color: rgb(109, 138, 109); */
+    background-color:rgb(179, 243, 179);
+    color: rgb(24, 24, 24);
+    /* color:aliceblue; */
     cursor: pointer;
 }
 
 .hidden {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 1px;
-    margin-left: 10px;
-    padding: 5px;
-    width: 60%;
+    font-family: 'Roboto', sans-serif;
+    margin: 3px 0 3px 10px;
+    padding: 7px;
+    width: 67%;
     display: none;
     font-size: 16px;
-    border:rgb(109, 138, 109) 1px solid;
+    border:rgb(179, 243, 179) 1px solid;
     border-radius: 5px;
 }
 
@@ -60,7 +87,7 @@ button:hover {
 }
 
 #column1 {
-    flex: 65%;
+    flex: 70%;
 }
 
 #column2 {
@@ -68,6 +95,8 @@ button:hover {
     right: 5%;
     z-index: 1;
     position: fixed;
+    font-family: 'Roboto', sans-serif;
+
     /* padding-top: 150px;
     width: 400px;
     z-index: 1;
@@ -77,3 +106,13 @@ button:hover {
     position: fixed;
     display: flex; */
 }
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
