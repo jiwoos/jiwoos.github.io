@@ -74,7 +74,7 @@ button:hover {
     width: 67%;
     display: none;
     font-size: 16px;
-    border:rgb(179, 243, 179) 2px double;
+    border:rgb(179, 243, 179) 3px double;
     border-right: 0;
     border-left: 0;
 }
