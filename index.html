@@ -17,16 +17,39 @@
     <div id="row">
         <div id="column1">
             <div id="web">
-                <h2>Web App Projects</h2>
+                <h2>Full-Stack Web Dev Projects</h2>
 
                 <ul>
                     <li> Simple File Sharing Server
-                        <div class="hidden"> explanations about sharing server </div>
+                        <button id="myButton1" onclick="showDIV(1)"> Show more</button>
+                        <div id="1" class="hidden" > 
+                            <a href="https://github.com/jiwoos/File-Sharing-Server">Source Code</a>
+                        </div>
                     </li>
-                    <li>Simple News Web</li>
-                    <li> Javascript Calculator</li>
-                    <li> AJAX Calendar</li>
-                    <li> Money Managing Book</li>
+                    <li>Simple News Web
+                        <button id="myButton2" onclick="showDIV(2)"> Show more</button>
+                        <div id="2" class="hidden"> 
+                            <a href="https://github.com/jiwoos/News-Web">Source Code</a>
+                        </div>
+                    </li>
+                    <li> Javascript Calculator
+                        <button id="myButton3" onclick="showDIV(3)"> Show more</button>
+                        <div id="3"  class="hidden"> 
+                            <a href="https://github.com/jiwoos/JavaScript-Calculator">Source Code</a>
+                        </div>
+                    </li>
+                    <li> AJAX Calendar
+                        <button id="myButton4" onclick="showDIV(4)"> Show more</button>
+                        <div id="4"  class="hidden"> 
+                            <a href="https://github.com/jiwoos/Calendar">Source Code</a>
+                        </div>
+                    </li>
+                    <li> Money Managing Book
+                        <button id="myButton5" onclick="showDIV(5)"> Show more</button>
+                        <div id="5"  class="hidden"> 
+                            <a href="https://github.com/jiwoos/Money_Managing_Book">Source Code</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div id="ios">
@@ -52,6 +75,38 @@
 
                 </ul>
             </div>
+
+            <div id="Vis">
+                <h2>Data Visualization Projects</h2>
+                <ul>
+                    <li> Olympic Visualization
+                        <button id="myButton41" onclick="showDIV(41)"> Show more</button>
+                        <div id="41"  class="hidden"> 
+                            <a href="https://github.com/jiwoos/120years-olympics">Source Code</a>
+                            <img src="public/images/vis/olympic-vis.png" alt="olympic-vis" width="100%" >
+                        </div>
+                    </li>
+                    <li> Electoral Map
+                        <button id="myButton42" onclick="showDIV(42)"> Show more</button>
+                        <div id="42"  class="hidden"> 
+                            <a href="https://github.com/jiwoos/Electoral-Map">Source Code</a>
+                        </div>
+                    </li>
+                    <li> Text Data Analysis on Sentiment
+                        <button id="myButton43" onclick="showDIV(43)"> Show more</button>
+                        <div id="43"  class="hidden"> 
+                            <a href="https://github.com/jiwoos/Visualizing-Text-Data">Source Code</a>
+                            <img src="public/images/vis/text-vis.png" alt="text-data-vis" width="100%" >
+
+                        </div>
+
+                    </li>
+
+
+
+
+                </ul>
+            </div>
         </div>
 
 
@@ -61,7 +116,7 @@
                 <p>Washington University in St. Louis</p>
                 <p> Major in Computer Science</p>
                 <p>Double Major in Educational Studies</p>
-                <p> GPA: 3.79 | Major GPA: 3.94</p>
+                <p> GPA: 3.82 | Major GPA: 3.94</p>
                 <p> Expected Graduation: May 2022</p> 
             </div>
 
@@ -71,5 +126,27 @@
     </div>
 
 </body>
+<script>
+    function showDIV(id) {
+        var x = document.getElementById(id);
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
 
+            var elem = document.getElementById("myButton" + id);
+            if (elem.value=="Show less") {
+                elem.value = "Show more";
+                elem.innerHTML = "Show more";
+            }
+            else {
+                elem.value = "Show less";
+                elem.innerHTML = "Show less"
+            }
+        }
+
+        
+
+</script>
 </html>
