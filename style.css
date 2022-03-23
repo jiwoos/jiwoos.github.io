@@ -44,7 +44,6 @@ body {
 ul {
     list-style: none;
     font-size: 20px;
-
 }
 
 img {
@@ -71,12 +70,13 @@ button:hover {
 .hidden {
     font-family: 'Roboto', sans-serif;
     margin: 3px 0 3px 10px;
-    padding: 7px;
+    padding: 10px;
     width: 67%;
     display: none;
     font-size: 16px;
-    border:rgb(179, 243, 179) 1px solid;
-    border-radius: 5px;
+    border:rgb(179, 243, 179) 2px double;
+    border-right: 0;
+    border-left: 0;
 }
 
 #row {
@@ -115,4 +115,8 @@ button:hover {
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
+  }
+
+  .smaller {
+      font-size: 15px;
   }
